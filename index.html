@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Backgrounds: stars1.jpg stars2.bmp stars3.gif -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
 			body { 
 				background-color: black; 
 				background-image: url('images/stars2.jpg'); 
 				color: white;
 				text-align: center;
-				font-family: "Comic Sans MS", "Comic Sans", "Marker Felt", sans-serif;
+				cursor: url("cursors/NormalSelect.cur"), url("cursors/Windows95.cur"), default;
+    			font-family: "Comic Sans MS", "Comic Sans", "Marker Felt", sans-serif;
 			} 
 			h1 { 
 				color: white; 
@@ -26,30 +27,41 @@
 				border: 1px solid black;
 				background-color: gray;
 			}
+			.sr-only {
+				position:absolute;
+				left:-10000px;
+				top:auto;
+				width:1px;
+				height:1px;
+				overflow:hidden;
+			}
 		</style>
 	</head>
 	<body>
+		<!-- LINK TO SIMPLIFIED PAGE -->
+		<div class="sr-only">
+			This website is a masterpiece of late 1990s web design but 
+			it may not be accessible. For an alternative, 
+			visit <a href="simplified.html">www.prinsen.ca/simplified</a>.
+		</div> 
+		
+		<div>
+		Want something easier on the eyes? 
+		<a href="simplified.html">Click here</a> 
+		<br><br>
+		</div>
+	
 		<!-- INTRO -->
 		<img src="images/earth.gif" width="70"> 
 		<h1>Vanessa Prinsen</h1>
 		<h3>
-			<!-- <img src="images/moon.gif" width="70">  -->
-			C++ & C# Programmer
-			<!-- <img src="images/earth.gif" width="70">  -->
+			<marquee style="width: 250px;">C++ & C# Programmer</marquee>
 		</h3>
 		<img src="images/moon.gif" width="70"> 
 		<br>
 		
-		<!-- SCROLLING TEXT -->
-		<table align="center" style="width: 300px; max-width=30%;">
-			<tr><td>
-			<marquee>Currently working at WB Games Montréal</marquee>
-			</tr></td>
-		</table>	
-
 		<!-- UNDER CONSTRUCTION -->
 		<p>
-		<!--<img src="images/construction.gif" style="width: 500px; max-width: 80%;">-->
 		<img src="images/under-construction.png" style="width: 400px; max-width: 80%;">
 		</p>
 		
@@ -62,14 +74,15 @@
 		<a href="https://www.mobygames.com/developer/sheet/view/developerId,295260/">Moby Games</a>
 				
 		<!-- MIDI MUSIC -->
-		<p>This page best viewed with background music.</p>
-		<audio controls> <!-- autoplay muted>-->
-<!-- 			<source src="music/gadfly_waltz.m4a" type="audio/mpeg">-->
+		<div>
+		<p>This page best viewed with background music:</p>
+		<audio controls>
 			<source src="music/Symph_10_2.m4a" type="audio/mpeg">
 			Your browser does not support the audio tag.
 		</audio> 
 		<embed src="music/gadfly_waltz.mid"  hidden="false" border="0" width="310" height="45" autostart="true" autoplay="true" loop="true" volume="75%">
 		<br>
+		</div>
 		
 		<!-- BEST VIEWED -->
 		<p>This page best viewed at 800x600</p>
@@ -80,8 +93,7 @@
 		<!-- WEBRING -->
 		<table class="webring" align="center" width="50%" >
 			<tr>
-				<!-- <td><img src="images/floppy.gif" width="100px"></td> -->
-				<td class="webring"  width="25%"><img src="images/n.gif" width="100px"></td>
+				<td class="webring"  width="25%"><img src="images/n.gif" width="100%"></td>
 				<td class="webring"  width="50%">
 				<table align="center">
 					<tr>
@@ -97,8 +109,7 @@
 					</tr>
 				</table>
 				</td>
-				<!-- <td><img src="images/cd.gif" width="100px"></td> -->
-				<td class="webring" width="25%"><img src="images/pc.gif" width="100px"></td>
+				<td class="webring" width="25%"><img src="images/pc.gif" width="80%"></td>
 			</tr>
 		</table>
 	</body>
